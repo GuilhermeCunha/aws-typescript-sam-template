@@ -24,7 +24,7 @@ export const world = async (
 
   // All log statements are written to CloudWatch
   console.info(
-    `3 response from: ${event.path} ${process.env.ExampleVariable2} `,
+    `4 response from: ${event.path} ${process.env.ExampleVariable2} `,
     body
   );
   return prepareResponse({

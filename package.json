@@ -25,7 +25,8 @@
     "compile": "node_modules/typescript/bin/tsc",
     "build:watch": "nodemon --watch 'src/' --exec 'npm run build' -e ts",
     "sam:local": "sam local start-api -n ./env.json",
-    "sam:build": "sam build",
+    "sam:build": "sam build --debug --cached",
+    "sam:deploy": "sam deploy --config-env default --debug",
     "sam:deploy:prod": "npm run sam:build && sam deploy --config-env default",
     "dev": "concurrently --kill-others \"npm run build:watch\" \"npm run sam:local\""
   }
