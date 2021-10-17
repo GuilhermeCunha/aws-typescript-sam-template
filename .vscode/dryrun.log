@@ -1,5 +1,0 @@
-make --dry-run --always-make --keep-going --print-directory
-make: Entering directory `/Users/guilherme.s.cunha/Documents/respositorios/aws-typescript-sam-template'
-cp -r src "/"
-make: Leaving directory `/Users/guilherme.s.cunha/Documents/respositorios/aws-typescript-sam-template'
- 
