@@ -31,11 +31,25 @@ npm install
 npm run test
 ```
 
-### Build
+### Sam Build
+```bash
+# Build application using sam
+npm run sam:build
+```
+
+
+### Sam Deploy
 ```bash
 # Install dependencies
 npm install
 
-# Run application in development
+# Build application using sam
 npm run sam:build
+
+# Deploy application using dev env (based in samconfig.yml)
+npm run sam:deploy -- dev
+
+
+# Deploy application using prod env (based in samconfig.yml)
+npm run sam:deploy -- prod
 ```
