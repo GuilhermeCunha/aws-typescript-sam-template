@@ -1,0 +1,25 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "sam-app-dev"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-khsedcv1nzia"
+s3_prefix = "sam-app-dev"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+image_repositories = []
+parameter_overrides = "ExampleVariable=bill ExampleVariable2=kill"
+
+
+[prod]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "sam-app-prod"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-khsedcv1nzia"
+s3_prefix = "sam-app-prod"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+image_repositories = []
+parameter_overrides = "ExampleVariable=kill ExampleVariable2=bill"

@@ -1,0 +1,14 @@
+node_modules
+
+# Builds
+.aws-sam
+dist
+
+# SO
+**/.DS_store
+
+# Secrets
+env.json
+!env.example.json
+samconfig.toml
+!samconfig.example.toml
