@@ -5,6 +5,8 @@
 ## How to run
 First of all, you must create the project configuration files.
 
+
+### Configure
 ```bash
 # Create the samconfig file
 cp samconfig.example.toml samconfig.toml
