@@ -42,9 +42,6 @@ npm run sam:build
 
 ### Sam Deploy
 ```bash
-# Install dependencies
-npm install
-
 # Build application using sam
 npm run sam:build
 

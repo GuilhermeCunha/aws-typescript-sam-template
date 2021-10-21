@@ -3,6 +3,7 @@ node_modules
 # Builds
 .aws-sam
 dist
+tsconfig-only-handler.json
 
 # SO
 **/.DS_store

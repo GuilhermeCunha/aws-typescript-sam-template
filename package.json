@@ -24,7 +24,7 @@
     "build": "tsc",
     "compile": "node_modules/typescript/bin/tsc",
     "build:watch": "nodemon --watch 'src/' --exec 'npm run build' -e ts",
-    "sam:local": "sam local start-api -n ./env.json",
+    "sam:local": "sam local start-api -n ./env.json --warm-containers LAZY",
     "sam:build": "sam build --debug --cached",
     "sam:deploy": "sam deploy --debug --config-env",
     "sam:deploy:prod": "npm run sam:build && sam deploy --config-env default",

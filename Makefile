@@ -8,6 +8,9 @@ build-hello:
 
 build-world:
 	$(MAKE) HANDLER=src/handlers/world.ts build-lambda-common
+
+build-helloListener:
+	$(MAKE) HANDLER=src/handlers/helloListener.ts build-lambda-common
 	
 
 build-lambda-common:
